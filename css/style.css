@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.text {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.text {
+
+
+    align-items: center;
+}
+
+/* .text :hover{
+    transform: scale(1.05);
+    color: blue;
+} */
+.text h1 {
+    /* border: 1px solid grey; */
+    color: rgb(40, 141, 200);
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.text h2 {
+    border: 2PX solid black;
+}
+
+/* .Image {
+    position: relative;
+    color: black;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+
+} */
+
+.Image h1 {
+    margin-left: 20px;
+}
+.image-slider h1{
+    margin-left: 20%;
+}
+
+table {
+
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.booking-button {
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.booking-button a {
+    text-decoration: none;
+}
+
+.booking-button:hover {
+    color: white;
+}
+
+
+.country-image-slider .image-slider img {
+    height: 350px;
+    width: 350px;
+    margin-top: 20px;
+}
