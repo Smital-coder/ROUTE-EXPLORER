@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+            body {
+        font-size: 'Oswald', sans-serif;
+        overflow-x: hidden;
+     color: #19191a;
+        /* background: url('img/index.jpg') no-repeat;
+        background-size: cover; */
+}
+
+header {
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+    border-bottom: 1px solid #dbdbdb; 
+    background-color: skyblue;
+}
+
+header ul li {
+    display:inline-block ;
+    list-style: none;
+    margin: 0 30px;
+}
+
+/* header ul li:last-child {
+    margin-right: 0;
+} */
+
+header ul li a {
+    text-decoration: none;
+    color: #0a0a0a;
+    padding: 30px 0;
+    display: inline-block;
+    transition: all ease 0.3s; 
+    font-size: 20px;
+}
+
+header ul li a:hover {
+    color: #ff8a00;
+}
+
+/* submenu style */
+
+header ul .submenu {
+    position: absolute;
+    width: 200px;
+    background-color: #ffffff;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;  
+    transition: all ease 0.5s; 
+}
+
+header ul li:hover .submenu {
+    z-index: 99;
+    opacity: 1;
+    margin: 0;
+}
+
+header ul .submenu li {
+    margin: 0;
+    width: 100%;
+}
+
+header ul .submenu li a {
+    padding: 15px 20px;
+    display: inline-block;
+    width: 100%;
+}
+.hero {
+    position: relative;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.h1{
+    margin-left: 20px;
+    text-align: center;
+    color: #0a0a0a;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.country-image-slider .image-slider img {
+    margin: auto;
+    height: 380px;
+    width: 80%;
+    margin-top: 40px;
+    opacity: 0.9;
+}
+   
+
+.search-bar{
+    background-color: navy;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+.travel{
+    margin-top: 25px;
+    column-gap: 15px;
+}
+.popular-destination{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-size: 48px; */
+    justify-content: center;
+}
+.popular{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: oblique;
+    font-size: 30px;
+}
+.popular h2{
+    margin-top: 30px;
+    font-size: 50px;
+    color: navy;
+}
+
+
+.destination-card {
+            position: relative;
+            color: white;
+            text-align: center;
+            display: flex;
+            /* flex-direction: row; */
+            padding: 5px;
+            
+        }
+        .destination-card img {
+            width: 300px;
+            height: 250px;
+        }
+        .destination-card :hover{
+            transform: scale(1.05);
+        }
+        .destination-card .overlay {
+            position: absolute;
+            
+            bottom: 10px;
+            left: 10px;
+            /* background-color: rgba(0, 0, 0, 0.5); */
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .overlay{
+            text-align: center;
+            justify-content: center;
+        }
+        .overlay:hover{
+            color: red;
+        } 
+        
+        .Places{
+            background-color: skyblue;
+            border-radius: 15px;
+            display: inline-block;
+            
+
+        }
+        .destination-card .overlay .Places{
+            display: inline-block;
+            /* margin-left: 20px; */
+        }
+
+        .footer-container {
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: #0a0e27;
+    }
+    
+    .footer-section {
+        flex: 1;
+        margin: 10px;
+    }
+    
+    .footer-section h3 {
+        margin-bottom: 10px;
+    }
+    
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .footer-section ul li {
+        margin-bottom: 5px;
+    }
+    
+    .footer-section ul li a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    
+    .footer-section ul li a:hover {
+        text-decoration: underline;
+    }
+    .footer-section p{
+        color: white;
+    }
+    
+    .contact-info img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+    
+    .social-icons a {
+        margin-right: 10px;
+    }
+    
+    .social-icons img {
+        width: 20px;
+    }
+    
+    .instagram-images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .instagram-images img {
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+    }
+    .fa-brands{
+        color: white;
+        height: 20px;
+        width: 20px;
+    }
+    .footer-section h3{
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- <h2>Tour And Traveles</h2> -->
+         <img src="img/tourandtravel_footer.png">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">User</a>
+                    <ul class="submenu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Registration</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://127.0.0.1:5500/contect.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+        <div class="country-image-slider">
+
+            <div class="image-slider">
+                <img src="./img/italy.jpg" alt="country images">
+                <div class="right">
+                    <h1> <style>.right{
+                        color: #0a0a0a;
+                        margin-right: 20%;
+                        font-style: bold;
+                    }</style>Italy</h1>
+                </div>
+                
+            </div>
+            <div class="image-slider">
+                <img src="./img/london.jpg" alt="country images">
+                <div class="right">
+                    <h1> <style>.right{
+                        color: #0a0a0a;
+                        margin-right: 20%;
+                    }</style>London</h1>
+                </div>
+                
+            </div>
+            <div class="image-slider">
+                <img src="./img/nali.jpg" alt="country images">
+                <div class="right">
+                    <h1> <style>.right{
+                        color: #0a0a0a;
+                        margin-right: 20%;
+                    }</style>Bali</h1>
+                </div>
+            </div>
+            <div class="image-slider">
+                <img src="./img/ladakh.jpg" alt="country images">
+                <div class="right">
+                    <h1> <style>.right{
+                        color: #0a0a0a;
+                        margin-right: 20%;
+                    }</style>Ladakh</h1>
+                </div>
+            </div>
+            <div class="image-slider">
+                <img src="./img/maldives.jpg" alt="country images">
+                <div class="right">
+                    <h1> <style>.right{
+                        color: #0a0a0a;
+                        margin-right: 20%;
+                    }</style>Maldives</h1>
+                </div>
+            </div>
+            <div class="image-slider">
+                <img src="./img/goa.jpg" alt="country images">
+                <div class="right">
+                    <h1> <style>.right{
+                        color: #0a0a0a;
+                        margin-right: 20%;
+                    }</style>Goa</h1>
+                </div>
+            </div>
+        </div>
+       
+          
+  
+    </section>
+    <section class="search-bar">
+        <form class="travel">
+            <input type="text" placeholder="Where to go?" style="width: 200px; height: 25px;font-size: 15px; border-radius: 20px; border: none;  color: white; margin-left: 25px; text-align: center;">
+            <input type="date" style="height: 25px; width: 150px; border-radius: 10px; text-align: center; border-color: grey;border: none;">
+            <select style="height: 25px; width: 150px; border-radius: 15px; text-align: center; border-color: grey;">
+                <option value="travel-type">Travel type</option>
+                <option value="travel-type">BUS</option>
+                <option value="travel-type">Train</option>
+                <option value="travel-type">Flight</option>
+            </select>
+            <button type="submit" style="width: 100px; height: 25px;font-size: 15px; border-radius: 20px; border: none; background-color: red; color: white; margin-left: 25px;">Search</button>
+        </form>
+    </section>
+    <section class="popular-destination">
+        <div class="popular">
+            <h2>Popular Destination</h2>
+            <p>Suffered alternation from, by injected or good day randomised </p>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        
+                            <img src="img/italy.jpg" alt="London" onclick="alert('User must login first!');" style="cursor: pointer;">
+                        
+                        <div class="overlay">
+                            <p class="d-flex align-items-center">
+                                Italy <a href="#" style="background-color: skyblue; margin-left: 10px; border-radius: 15px; width: 100px;text-decoration: none;">07 Places</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <img src="img/london.jpg" alt="London" onclick="alert('User must login first!');" style="cursor: pointer;">
+                        <div class="overlay">
+                            <p class="d-flex align-items-center">london <a href="#" style="background-color: skyblue; margin-left: 10px; border-radius: 15px; width: 100px;text-decoration: none;">07 Places</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <img src="img/maldives.jpg" alt="London" onclick="alert('User must login first!');" style="cursor: pointer;">
+                        <div class="overlay">
+                            <p class="d-flex align-items-center">Maldives <a href="#" style="background-color: skyblue; margin-left: 10px; border-radius: 15px; width: 100px;text-decoration: none;">07 Places</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <img src="img/nali.jpg" alt="London" onclick="alert('User must login first!');" style="cursor: pointer;">
+                        <div class="overlay">
+                            <p class="d-flex align-items-center">Bali <a href="#" style="background-color: skyblue; margin-left: 10px; border-radius: 15px; width: 100px;text-decoration: none;">07 Places</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <img src="img/ladakh.jpg" alt="London" onclick="alert('User must login first!');" style="cursor: pointer;">
+                        <div class="overlay">
+                            <p class="d-flex align-items-center">ladakh <a href="#" style="background-color: skyblue; margin-left: 10px; border-radius: 15px; width: 100px;text-decoration: none;">07 Places</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <img src="img/goa.jpg" alt="London" onclick="alert('User must login first!');" style="cursor: pointer;">
+                        <div class="overlay">
+                            <p class="d-flex align-items-center">Goa <a href="#" style="background-color: skyblue; margin-left: 10px; border-radius: 15px; width: 100px;text-decoration: none;">07 Places</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact-info">
+                <img src="img/tourandtravel_footer.png" style="height: 100px; width: 100px;">
+                <p>B-502, Apex commercial center, Varachha Road</p>
+                <p>Surat, Gujarat</p>
+                <p>+91 (972)-710 1353</p>
+                <p>Rudrax@tourandtravel.com</p><br>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i><a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section company-links">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a href="#">Gallery</a></li> -->
+                    <li><a href="contect.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section popular-destinations">
+                <h3>Popular Destinations</h3>
+                <ul>
+                 <li><a href="#">India</a></li>
+                 <li><a href="#">Maldives</a></li>
+                 <li><a href="#">Bali</a></li>
+                 <li><a href="#">Switzerland</a></li>
+                 <li><a href="#">ladakh</a></li>
+                </ul>
+            </div>
+            <div class="footer-section instagram">
+                <h3>Instagram</h3>
+                <div class="instagram-images">
+                    <img src="img/f1.jpg" alt="Instagram Image 1">
+                    <img src="img/f2.jpg" alt="Instagram Image 2">
+                    <img src="img/f3.jpg" alt="Instagram Image 3">
+                    <img src="img/f4.jpg" alt="Instagram Image 4">
+                    <img src="img/f5.jpg" alt="Instagram Image 5">
+                    <img src="img/f1.jpg" alt="Instagram Image 6">
+                </div>
+            </div>
+        </div>
+    </footer>
+   
+
+    
+</body>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/custom.js"></script>
+</html>

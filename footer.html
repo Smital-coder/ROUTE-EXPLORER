@@ -1,0 +1,422 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <link href="https://stakpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="styelsheet">
+    <link href="https://cdnjs.cloudflare.com/ajaxlibs/font-awesome/5.10.0/css/all.min.css" rel="styelsheet">
+    <link href="styel.css" rel="styelsheet">
+</head>
+<style>
+    .body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+}
+
+.a{
+    transition: .3s;
+}
+
+.a:hover,
+.a:active,
+.a:focus{
+    outline: none;
+    text-decoration: none;
+}
+
+.footer{
+    position: relative;
+    padding-top: 45px;
+    background: #121518;
+}
+
+.footer .footer_company,
+.footer .footer_destination,
+.footer .footer_instagram{
+    position: relative;
+    margin-bottom: 45px;
+    color: #999999;
+}
+
+.footer .footer-title h3{
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #eeeeee;
+}
+
+.footer .footer-title h3::after{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #eeeeee;
+}
+
+.footer .footer_company p{
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #999999;
+}
+
+.footer .footer_company i{
+    margin-right: 10px;
+    font-size: 16px;
+    color: #999999;
+}
+
+.footer .footer_company a :last-child i{
+    margin: 0;
+}
+
+.footer .footer_company a:hover i{
+    color: #0085ff;
+}
+
+.footer .footer_destination a{
+    display: block;
+    margin-bottom: 6px;
+    padding-left: 15px;
+    color: #999999;
+}
+
+.footer.footer_destination a:last-child{
+    margin: 0;
+}
+
+.footer .footer_destination a:hover{
+    color: #0085ff;
+}
+
+.footer .footer_destination a::before{
+    position: absolute;
+    content: "\f105";
+    font-family: "font awesome 5 free";
+    font-weight: 900;
+    left: 0;
+}
+
+.footer .footer_instagram{
+    float: left;
+    font-size: 0;
+}
+
+.footer .footer_instagram a{
+    padding: 0 8px 8px 0;
+    display: block;
+    width: 33.33%;
+    float: left;
+}
+
+.footer .footer_instagram a img{
+    width: 100%;
+}
+
+.footer .footer_newsletter input{
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(256, 256, 256, .15);
+    margin-bottom: 15px;
+}
+
+.footer.footer_newsletter .btn{
+    display: block;
+    width: 100%;
+    height: 35px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #e9414a;
+    border-radius: 5px;
+    border: none;
+    transition: .3s;
+}
+
+.footer.footer_newsletter .btn:hover{
+    color: #0085ff;
+    background: #ffffff;
+}
+.footer.footer_newsletter .btn:focus{
+    box-shadow: none;
+}
+</style>
+<body>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer-logo">
+                        <a href="#">
+                            <img src="img/tourandtravel_footer.png" alt="">
+                        </a>
+                    </div>
+                    <p>B-502,Apex commercial center,varachha road<br> Surat,Gujrat <br>
+                        <a href="#">+91 (972)-710 1353</a> <br>
+                        <a href="#">Rudrax@tourandtravel.com</a>
+                    </p>
+                    <!-- <div class="socail_links">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="ti-twitter-alt"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-youtube-play"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <!-- <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_company">
+                                Company
+                            </h3>
+                            <ul class="links">
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="Gallery.html"> Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_destination">
+                                Popular destination
+                            </h3>
+                            <ul class="links double_links">
+                                <li><a href="#">Indonesia</a></li>
+                                <li><a href="#">America</a></li>
+                                <li><a href="#">India</a></li>
+                                <li><a href="#">Switzerland</a></li>
+                                <li><a href="#">Italy</a></li>
+                                <li><a href="#">Canada</a></li>
+                                <li><a href="#">Franch</a></li>
+                                <li><a href="#">England</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_instagram">
+                                Instagram
+                            </h3>
+                            <div class="instagram_feed">
+                                <div class="single_insta">
+                                    <a href="#">
+                                        <img src="img/instagram/1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="single_insta">
+                                    <a href="#">
+                                        <img src="img/instagram/2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="single_insta">
+                                    <a href="#">
+                                        <img src="img/instagram/3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="single_insta">
+                                    <a href="#">
+                                        <img src="img/instagram/4.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="single_insta">
+                                    <a href="#">
+                                        <img src="img/instagram/5.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="single_insta">
+                                    <a href="#">
+                                        <img src="img/instagram/6.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                       
+                </div>
+            </div>
+        </div>
+    </div>
+</body> --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="https://fonts.googleapis.com/css2?family=work+sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Footer</title>
+</head>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        font-family: 'work sans',sans-serif;
+    }
+
+    body{
+        height: 100vh;
+        width: 100%;
+        background: #121b25;
+    }
+
+    section{
+        padding: 80px 13% 70px;
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+        gap: 3.5rem;
+        background: #1a242f;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .footer-content h3{
+        color: #fff;
+        margin-bottom: 1.5rm;
+        font-size: 20px;
+    }
+
+    .footer-content li{
+        margin-bottom: 10px;
+        margin-top: 0px;
+    } 
+
+    .footer-content li a{
+        display: block;
+        color: #d6d6d6;
+        font-size: 15px;
+        font-weight: 400;
+        transition: all .40s ease;
+    } 
+
+    .footer-content li a:hover{
+        transform: translateY(-3px) translateX(-5px);
+        color: #fff;
+    } 
+
+    .footer-content p{
+        color: #d6d6d6;
+        font-size: 16px;
+        line-height: 30px;
+        margin: 20px 0;
+    } 
+
+    /* .icons a{
+        display: inline-block;
+        font-size: 22px;
+        color: #d6d6d6;
+        margin-right: 17px;
+        transition: all .40s ease;
+    }
+
+    .icons a:hover{
+        color: #fff;
+        transform: translateY(-5px);
+    } */
+
+    /* @media (max-width:1690px){
+        sectoion{
+            padding: 50px 5% 40px;
+        }
+    }
+
+    @media (max-width:1120px){
+        .footer{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+            gap: 2rem;
+        }
+    }
+
+    @media (max-width:700px){
+        .footer{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(150px,auto));
+            gap: 2.5rem;
+        }
+    } */
+</style>
+
+<body>
+    <section class="footer">
+        <div class="footer-content">
+            <a href="#">
+              <img src="img/tourandtravel_footer.png">
+            </a>
+            <p>B-502,Apex commercial center,varachha road<br> Surat,Gujrat <br>
+                <a href="#">+91 (972)-710 1353</a> <br>
+                <a href="#">Rudrax@tourandtravel.com</a>
+            </p>
+
+            <div class="icons">
+                <span class="icon"><ion-icon name="logo-facebook"></ion-icon></span>
+                <span class="icon"><ion-icon name="logo-whatsapp"></ion-icon></span>
+                <span class="icon"><ion-icon name="logo-instagram"></ion-icon></span>
+                <span class="icon"><ion-icon name="logo-youtube"></ion-icon></span>
+            </div>
+
+            <div class="footer-content">
+                <h3> Company </h3>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+
+            <div class="footer-content">
+                <h3> Popular destination </h3>
+                <li><a href="#">Indonesia</a></li>
+                <li><a href="#">India</a></li>
+                <li><a href="#">America</a></li>
+                <li><a href="#">England</a></li>
+                <li><a href="#">Switzerland</a></li>
+                <li><a href="#">Italy</a></li>
+                <li><a href="#">Canada</a></li>
+                <li><a href="#">Franch</a></li>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

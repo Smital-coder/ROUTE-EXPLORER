@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Show</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row" style="border:1px solid black;padding:15px!important;box-shadow:5px 5px 10px grey;margin:2%">
+          <div class="col-md-1"></div>      
+          <div class="col-md-5">
+            <img src='echo("customerimage\\".$rw["customerimage"]) '/> 
+          </div>
+          <div class="col-md-5">
+
+          <table class="table">
+               <tr>
+                  <td>Customer Name</td>
+                  <td> echo($rw['customername']) ?></td>
+               </tr>  
+               <tr>
+                  <td>Address</td>
+                  <td> echo($rw['address']) ?></td>
+               </tr>  
+               <tr>
+                  <td>City Name</td>
+                  <td> echo($rw['cityname']) ?></td>
+               </tr>  
+               <tr>
+                  <td>pincode</td>
+                  <td> echo($rw['pincode']) ?></td>
+               </tr>  
+               <tr>
+                  <td>contactno</td>
+                  <td> echo($rw['contactno']) ?></td>
+               </tr>  
+           </table>
+          </div>
+         </div>
+        </div>
+    </div>
+
+</body>
+</html>
